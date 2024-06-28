@@ -1,0 +1,717 @@
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .varela-round-regular {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: "ubuntu","varela-round","monserrat",sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul a:hover {
+    color: skyblue;   
+}
+
+
+header nav ul li :hover {
+    background-color: rgb(245, 219, 186);
+    padding: 10px;
+    border-radius: 5px;
+}
+ 
+section#Fechas {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+section#banner {
+    height: 350px;
+    background-image: url(images/MVDPalooza-Baner.jpg);
+    background-size: cover;
+    background-position: center;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#banner h1 {
+    font-size: 4em;
+    color: skyblue;
+    text-shadow: 1px 1px 2px black, 0 0 1em skyblue, 0 0 0.2em rgb(5, 5, 5);
+}
+
+section#banner button {
+    font-weight: 600;
+    color: black;
+    border-radius: 60px;
+    border-style: hidden;
+    background-color: rgb(245, 219, 186);
+    padding: 10px;
+}
+
+section#banner button a {
+    text-decoration: none;
+}
+
+section#Fechas img {
+    border-radius: 5px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+section#Fechas .day{
+    text-align: center;
+    background-image: url(images/Fechas.jpg);
+    background-size: cover;
+    background-position: center;  
+    height: 250px;
+    padding-left: 220px;
+    padding-right: 220px;
+    color: skyblue;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em blanchedalmond, 0 0 0.2em rgb(5, 5, 5);
+    border-radius: 5px;
+}
+
+section#Fechas button {
+    font-weight: 600px;
+    color: black;
+    padding: 20px 260px ;
+    border-style: hidden;
+    background-color: rgb(245, 219, 186);
+    margin-top: 10px;
+    border-radius: 5px;
+} 
+
+section#Fechas div.day p {
+    font-size: 35px;
+    padding-top: 25px;
+}
+
+section#Fechas div.day p:nth-child(2) {
+    font-size: 55px;
+}
+
+section#Fechas  button a {
+    text-decoration: none;
+    
+}
+
+section#Fechas .container h2:nth-child(1) {
+    margin-bottom: 25px;
+}
+
+section#Galeria {
+    margin-top: 50px;
+    background-color:rgb(245, 219, 186) ;
+}
+
+section#Galeria div.container p{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.pad {
+    padding: 50px;
+}
+
+.grilla {
+    display: grid;
+}
+
+#grilla {
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+    grid-template-rows: repeat(8, 150px);
+    row-gap: 10px;
+    column-gap: 10px;
+    gap: 15px 10px;
+}
+
+#grilla article :hover {
+    color: skyblue; 
+}
+
+
+#grilla article:nth-child(1) {
+    grid-column: 1 / 1;
+    grid-row: 1 / 5;
+    background-image: url(images/Kuelgue.png);
+    background-size: cover;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+
+#grilla article:nth-child(1) div {
+    padding-left: 10px;
+    color: white;
+}
+
+#grilla article:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-image: url(images/Kuelgue3.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px
+}
+
+#grilla article:nth-child(3) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    background-image: url(images/Airbag1.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px
+}
+
+#grilla article:nth-child(4) {
+    grid-column: 4 / 4;
+    grid-row: 1 / 3;
+    background-image: url(images/LasPastillas1.png);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 10px
+}
+
+#grilla article:nth-child(5) {
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+    background-image: url(images/airbag2.png);
+    background-size: cover;
+    display: flex;
+    background-position: top;
+    box-sizing: border-box;
+    border-radius: 10px;
+    justify-content: flex-end;
+    
+}
+
+#grilla article:nth-child(5) div {
+    padding-right: 10px;
+    color: white;
+}
+
+
+#grilla article:nth-child(6) {
+    grid-column: 4 / 5;
+    grid-row: 3 / 5;
+    background-image: url(images/LasPastillas2.png);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 10px
+}
+
+#grilla article:nth-child(6) div {
+    padding-left: 10px;
+    color: white;
+}
+
+#grilla article:nth-child(7) {
+    grid-column: 1 / 1;
+    grid-row: 5 / 7;
+    background-image: url(images/NTVG1.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 10px
+}
+
+#grilla article:nth-child(8) {
+    grid-column: 2 / 4;
+    grid-row: 5 / 7;
+    background-image: url(images/NTVG2.png);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 10px;
+    justify-content: center;
+    
+}
+
+#grilla article:nth-child(8) div {
+    padding-left: 10px;
+    color: white;
+}
+
+#grilla article:nth-child(9) {
+    grid-column: 1 / 2;
+    grid-row: 7 / 9;
+    background-image: url(images/LVP2.png);
+    background-size: cover;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 10px
+}
+
+#grilla article:nth-child(10) {
+    grid-column: 2 / 4;
+    grid-row: 7/ 9;
+    background-image: url(images/LVP1.png);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 10px;
+    justify-content: end;
+    align-items: end;
+}
+
+#grilla article:nth-child(10) div {
+    padding-right: 10px;
+    color: white;
+}
+
+#grilla article:nth-child(11) {
+    grid-column: 4 / 5;
+    grid-row: 5 / 7;
+    background-image: url(images/CDN1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+#grilla article:nth-child(11) div {
+    padding-top: 5px;
+    color: white;
+}
+
+#grilla article:nth-child(12) {
+    grid-column: 4 / 5;
+    grid-row: 7 / 9;
+    background-image: url(images/CDN2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 10px
+}
+section#Artistas {
+    margin-top: 50px;
+}
+
+section#Artistas h2 {
+    padding-top: 10px;
+}
+
+section#Artistas p {
+    padding-top: 10px;
+}
+
+
+#grilla-2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+    grid-template-rows: 200px;
+    row-gap: 10px;
+    column-gap: 10px;
+    gap: 15px 20px;
+    padding-top: 15px;
+}
+
+#grilla-2 article:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 1;
+    background-image: url(images/Kuelgue-Logo.png);
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    border-radius: 10px
+
+}
+
+#grilla-2 article:nth-child(2) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 1;
+    background-image: url(images/LasPastillasLogo.jpg);
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px
+
+}
+
+#grilla-2 article:nth-child(3) {
+    grid-column: 4 / 5;
+    grid-row: 1 / 1;
+    background-image: url(images/Cuartetodenos.logo.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px
+
+}
+
+#grilla-2 article:nth-child(4) {
+    grid-column: 1 / 3;
+    grid-row: 2 / 2;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 15px;
+} 
+
+
+#grilla-2 article:nth-child(5) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 2;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+#grilla-2 article:nth-child(6) {
+    grid-column: 4 / 5;
+    grid-row: 2 / 2;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+
+#grilla-3 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+    grid-template-rows: 200px;
+    row-gap: 10px;
+    column-gap: 10px;
+    gap: 15px 20px;
+    padding-top: 15px;
+}
+
+#grilla-3 article:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    background-image: url(images/Airbag.logo.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    border-radius: 10px
+
+}
+
+#grilla-3 article:nth-child(2) {
+    grid-column: 2 / 4;
+    grid-row: 1 / 1;
+    background-image: url(images/LVP-Logo.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#grilla-3 article:nth-child(3) {
+    grid-column: 4 / 5;
+    grid-row: 1 / 1;
+    background-image: url(images/ntvg-logo.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px
+
+}
+
+#grilla-3 article:nth-child(4) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+#grilla-3 article:nth-child(5) {
+    grid-column: 2 / 4;
+    grid-row: 2 / 2;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+#grilla-3 article:nth-child(6) {
+    grid-column: 4 / 5;
+    grid-row: 2 / 2;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+#grilla-3 article p {
+    padding-top: 10px;
+}
+
+#grilla-2 article p {
+    padding-top: 10px;
+}
+
+
+
+section#Artistas .Descripcion {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-top: 30px;
+} 
+
+
+section#sponsors {
+    margin-top: 50px;
+    height: 100px;
+    background-image: url(images/Sponsors.jpg);
+    background-size: cover;
+    background-position: center;  
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+    
+}
+
+section#sponsors img{
+    width: 100px;
+}
+
+
+section#Entradas #tickets {
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+} 
+
+section#Entradas {
+    margin-top: 50px;
+}
+
+table {
+    border-spacing: 10px;
+    border-collapse: separate;
+ }
+
+ .tabla-redondeada{ 
+    border-spacing: 0;
+    border-collapse: separate; 
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+ }
+
+ th,td {
+    padding: 10px;
+    padding-right: 40px;
+    padding-top: 20px;
+ }
+
+ th {
+    background-color: rgb(245, 219, 186);
+ }
+
+ td {
+    background-color: rgb(175, 215, 231);
+ }
+
+.tachado {
+    text-decoration: line-through;
+}
+
+.tabla-redondeada tr:first-child th:first-child {
+    border-radius: 19px 0 0 0 ;
+    
+ }
+
+.tabla-redondeada tr:first-child th:last-child {
+    border-radius: 0 19px 0 0 ;
+    
+ }
+
+.tabla-redondeada tr:last-child td:last-child {
+    border-radius: 0 0 19px 0;
+    
+ }
+
+.tabla-redondeada tr:last-child td:first-child {
+    border-radius: 0 0  0 19px;
+    
+}
+
+
+.NoRadio {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} 
+
+.NoRadio:hover {
+    background-color: blanchedalmond;
+}
+
+ form{
+    max-width: 500px; margin: 0 auto;
+    display: flex;
+}
+
+.multiple {
+    display: flex;
+    gap: 5px;
+}
+
+fieldset p {
+    padding-bottom:10px ;
+}
+
+.Comprar {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 20px;
+    width: 50%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:  rgb(245, 219, 186);
+} 
+
+.Comprar:hover {
+    cursor: pointer;
+}
+
+
+fieldset{
+    border: none;
+    padding: 10px;
+}
+
+footer {
+        margin-top: 50px;
+        height: 50px;
+        background-image: url(images/Sponsors.jpg);
+        background-size: cover;
+        background-position: center;  
+        display: flex;
+       justify-content: space-between;     
+       align-items: center;
+}
+
+footer p {
+    color: white;
+    padding-left: 320px;
+}
+
+footer div {
+    padding-right: 320px;
+}
